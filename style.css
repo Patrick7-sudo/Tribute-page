@@ -1,0 +1,205 @@
+
+/* 
+===========
+Fonts
+===========
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+/* font-family: 'Mate SC', serif; */
+
+
+/* 
+===========
+Variables
+===========
+*/
+:root{
+/* Primary color */
+--clr-primary-1 : rgba(31, 30, 30, 1);
+--clr-primary-2 : white;
+--clr-primary-3 : rgba(57, 96, 84, 1);
+--clr-black     : black;
+
+/* font styles */
+--primary-font  : 'Mate SC', serif;
+--secondary-font: "Open Sans", sans-serif;
+
+  --transition: all 0.3s linear;
+}
+/* 
+===========
+Global Styles
+===========
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  background: var(--clr-primary-1);
+  color: var(--clr-primary-2);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--clr-primary-2);
+    font-size: 21px;
+}
+ul{
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+img{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/* 
+===========
+Main
+===========
+*/
+/* navBar */
+
+#nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+ #nav-toggle{
+     background: transparent;
+     border-color: transparent;
+     cursor: pointer; 
+     transition: var(--transition);
+ }
+
+.toggle{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    
+   
+}
+
+#nav-toggle:hover{
+    transform: scale(1.2);
+    transition: var(--transition);
+    
+}
+
+#home{
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+#home a{
+    transition: var(--transition);
+}
+#home a:hover{
+    color: red;
+    transition: var(--transition);
+}
+
+.options a{
+    display: block;
+    padding: 0.5rem 3rem;
+    transition: var(--transition);
+}
+
+.options a:hover{
+    color: var(--clr-primary-3);
+    padding-left: 1rem;
+    background-color: black;
+    transition: var(--transition);
+}
+
+.options{
+    height: 0;
+    overflow: hidden;
+}
+
+.show-links {
+    height: 10rem;
+}
+
+
+@media screen and (min-width: 1170px){
+    #navbar-center{
+       width: 1170px;
+       margin: 0 auto;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding:1rem;
+    }
+
+    #nav-header{
+        padding:0;
+    }
+    #nav-toggle{
+     display: none;
+    }
+
+    .options{
+        height: auto;
+        display: flex;
+    }
+
+    .options a{
+        padding:0 5rem;
+        transition: var(--transition);
+    }
+
+    
+    .options a:hover{
+        background-color:transparent;
+        padding:0 5rem;
+        transition: var(--transition);
+
+    }
+}
+
+#main-center{
+    /* display: flex;
+    width:100vw;
+    height: 90vh;
+    justify-content: center;
+    align-items: center; 
+    background-color:pink ;*/
+}
+#image-holder{
+    /* background-color: red ; */
+    width:auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+#image-holder img{
+    transform: scaleX(-1);
+}
+
+#story-holder{
+    width:auto;
+    height: auto;
+    background-color: blue ;
+    margin:2rem;
+}
+#story-para{
+    padding:3rem;
+}
+
