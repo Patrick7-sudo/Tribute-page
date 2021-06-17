@@ -76,7 +76,6 @@ display: block;
 }
 
 #title-name{
-    /* background-color: yellow; */
     margin:2rem;
     border-bottom:5px solid rgba(57, 96, 84, 1);
     font-size:40px;
@@ -202,10 +201,7 @@ Main
 /* End Of NavBar */
 
 /* header */
-
-
 #image-holder{
-    /* background-color: red ; */
     width:auto;
     height: auto;
     display: flex;
@@ -242,8 +238,6 @@ Main
     }
 
     #image-holder{
-        /* background-color: red; */
-        /* width:60vw; */
         height: auto;
         overflow: hidden;
     }
