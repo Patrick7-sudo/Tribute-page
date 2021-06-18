@@ -124,15 +124,15 @@ Main
     
 }
 
-#home{
+#title{
     display: block;
     padding: 0.5rem 1rem;
 }
 
-#home a{
+#title a{
     transition: var(--transition);
 }
-#home a:hover{
+#title a:hover{
     color: red;
     transition: var(--transition);
 }
@@ -201,14 +201,16 @@ Main
 /* End Of NavBar */
 
 /* header */
-#image-holder{
+#img-div{
     width:auto;
     height: auto;
     display: flex;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-#image-holder img{
+#image{
     transform: scaleX(-1);
 }
 
@@ -269,11 +271,17 @@ Main
     margin-bottom: 3rem;
 }
 
-#life-story{
+#tribute-info{
     font-size:18px;
     width:50vw;
     height:60vh;
     overflow: scroll;
+}
+#tribute-link{
+    color:var(--clr-black)
+}
+#tribute-link:hover{
+    color:var(--clr-primary-3);
 }
 
 /* songs */
